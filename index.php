@@ -69,7 +69,7 @@ require_once("langs/$default_lang");
 
 // Current date & user IP
 $date    = date('jS F Y');
-$ip      = $_SERVER['REMOTE_ADDR'];
+$ip      = $_SERVER["HTTP_CF_CONNECTING_IP"]
 $data_ip = file_get_contents('tmp/temp.tdata');
 
 // Ads

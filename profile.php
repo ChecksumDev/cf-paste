@@ -25,7 +25,7 @@ require_once('includes/functions.php');
 header('Content-Type: text/html; charset=utf-8');
 
 $date    = date('jS F Y');
-$ip      = $_SERVER['REMOTE_ADDR'];
+$ip      = $_SERVER["HTTP_CF_CONNECTING_IP"]
 $data_ip = file_get_contents('tmp/temp.tdata');
 $con     = mysqli_connect($dbhost, $dbuser, $dbpassword, $dbname);
 
