@@ -11,4 +11,4 @@ to
 ```php
 $_SERVER["HTTP_CF_CONNECTING_IP"]
 ```
-Which grabs from cloudflare, do not use this fork if your not using cloudflare.
+Which grabs ip's from cloudflare instead of the usual way. Do not use this fork if your not using cloudflare.
